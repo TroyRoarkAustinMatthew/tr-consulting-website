@@ -2,76 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2LC1YESK4">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N2LC1YESK4');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2LC1YESK4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N2LC1YESK4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - TR Consulting LLC</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Container for the services section */
-        .services-container {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            gap: 10px !important;
-        }
-
-        /* Horizontal service buttons */
-        .service-buttons {
-            display: flex !important;
-            gap: 10px !important;
-            flex-wrap: nowrap !important;
-            justify-content: center !important;
-        }
-
-        .service-item {
-            cursor: pointer !important;
-            padding: 10px 20px !important;
-            border: 1px solid #ddd !important;
-            background-color: #f9f9f9 !important;
-            box-sizing: border-box !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            height: 50px !important; /* Shortened height */
-            transition: background-color 0.3s ease !important;
-        }
-
-        .service-item:hover {
-            background-color: #e0e0e0 !important;
-        }
-
-        .service-item.active {
-            background-color: #ddd !important;
-        }
-
-        .toggle-icon {
-            font-size: 18px !important;
-            color: #333 !important;
-            margin-left: 10px !important;
-        }
-
-        /* Right side for selected service item */
-        .right-display {
-            border: 1px solid #ddd !important;
-            padding: 20px !important;
-            background-color: #fff !important;
-            display: none !important;
-            width: 80% !important;
-        }
-
-        .right-display.active {
-            display: block !important;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -95,50 +36,25 @@
             <h2>What We Offer</h2>
             <p>We offer a range of services including:</p>
             <div class="services-container">
-                <div class="service-buttons">
-                    <div class="service-item" onclick="selectService(this)">
-                        <strong>Business Automation</strong>
-                        <span class="toggle-icon">+</span>
-                        <div class="service-details">
-                            <p>Streamline your processes for better productivity and efficiency. If it can be automated, then we can automate it. This includes data entry, extraction, and transfers.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-item" onclick="selectService(this)">
-                        <strong>Custom Software Development</strong>
-                        <span class="toggle-icon">+</span>
-                        <div class="service-details">
-                            <p>Tailoring software solutions to fit your unique requirements. We are empowered with the skills to create custom software tailored to Windows or web-based software. This could be to replace current software, completely new software, or a simple function you need to complete.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-item" onclick="selectService(this)">
-                        <strong>Data Analysis</strong>
-                        <span class="toggle-icon">+</span>
-                        <div class="service-details">
-                            <p>Transforming complex data into actionable insights. Anything data or statistics related can be accomplished through us. Whether you need a demand equation for your business, estimates, or interpretation, TR Consulting can handle it all. We also offer training on AI that includes how to use Python and start coding with access to ChatGPT and training on how to prompt, create macros/VBAs in Excel, and upload and retrieve data using ChatGPT.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-item" onclick="selectService(this)">
-                        <strong>Price Analysis</strong>
-                        <span class="toggle-icon">+</span>
-                        <div class="service-details">
-                            <p>Ensuring your pricing strategy maximizes profitability. We take economic theory and put it to practice.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-item" onclick="selectService(this)">
-                        <strong>Web Development</strong>
-                        <span class="toggle-icon">+</span>
-                        <div class="service-details">
-                            <p>Creating impactful online presences. If you need anything web-based, our team is equipped to handle it with our in-house expertise in JavaScript and Flask.</p>
-                        </div>
-                    </div>
+                <div class="service-item">
+                    <h3>Business Automation</h3>
+                    <p>Streamline your processes for better productivity and efficiency. If it can be automated, we can automate it.</p>
                 </div>
-                <div class="right-display" id="selected-service">
-                    <h3 id="service-title">Service Title</h3>
-                    <div id="service-content">Service Details</div>
+                <div class="service-item">
+                    <h3>Custom Software Development</h3>
+                    <p>Tailoring software solutions to fit your unique requirements. We develop custom software for both Windows and web-based platforms.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Data Analysis</h3>
+                    <p>Transforming complex data into actionable insights. From demand equations to AI training, we handle it all.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Price Analysis</h3>
+                    <p>Ensuring your pricing strategy maximizes profitability. We apply economic theory to practical pricing solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Creating impactful online presences. Our team excels in JavaScript and Flask for web development needs.</p>
                 </div>
             </div>
         </section>
@@ -147,12 +63,11 @@
             <h2>Case Studies</h2>
             <div class="case-study">
                 <h3>Kopco</h3>
-                <p>
-                    At TR Consulting LLC, we successfully optimized Kopco's business operations, leading to substantial cost savings by automating repetitive tasks such as mouse and keyboard interactions, data scraping, and data entry. Our team also developed a backup database using MariaDB, complete with a user-friendly front-end interface accessible to their executives. Additionally, we customized project timelines, ensured data integrity through comprehensive cleaning processes, and seamlessly integrated QuickBooks with Power BI for enhanced financial reporting and analytics.</p>
+                <p>We optimized Kopco's operations, leading to substantial cost savings by automating tasks like data entry and scraping. We also developed a backup database using MariaDB and integrated QuickBooks with Power BI.</p>
             </div>
             <div class="case-study">
                 <h3>Def-Media</h3>
-                <p>Def-Media approached TR Consulting LLC seeking a solution to convert Excel documents into XML format according to a specific schema. We developed a custom application that automates this process and provided comprehensive training on how to perform the conversion manually using VBA and Macros in Excel. Our solution delivered 100% accuracy, and we also offered the option to create a web-based version for enhanced accessibility.</p>
+                <p>Def-Media needed a solution to convert Excel documents to XML. We developed a custom application for this and provided training for manual conversion using VBA and Macros in Excel.</p>
             </div>
         </section>
     </main>
@@ -166,29 +81,5 @@
         <p>PO Box 180803, Fort Smith, AR 72918 | (479) 420-3292</p>
         <p>Email: <a href="mailto:tarconsultinggroupllc@gmail.com">tarconsultinggroupllc@gmail.com</a></p>
     </footer>
-
-    <script>
-        function selectService(element) {
-            // Remove 'active' class from all service items and reset icons
-            document.querySelectorAll('.service-item').forEach(item => {
-                item.classList.remove('active');
-                item.querySelector('.toggle-icon').textContent = '+';
-            });
-            
-            // Add 'active' class to the selected service item
-            element.classList.add('active');
-            // Change the icon to a minus sign for the selected service item
-            element.querySelector('.toggle-icon').textContent = '-';
-
-            // Display the selected service details on the right side
-            const serviceTitle = element.querySelector('strong').textContent;
-            const serviceContent = element.querySelector('.service-details').innerHTML;
-            document.getElementById('service-title').textContent = serviceTitle;
-            document.getElementById('service-content').innerHTML = serviceContent;
-
-            // Show the right display section
-            document.getElementById('selected-service').classList.add('active');
-        }
-    </script>
 </body>
 </html>

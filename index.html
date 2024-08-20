@@ -2,66 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2LC1YESK4">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N2LC1YESK4');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2LC1YESK4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N2LC1YESK4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TR Consulting LLC</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Styles for service items */
-        #services {
-    text-align: center;
-}
-
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Space between the cards */
-}
-
-.service-item {
-    flex: 1 1 calc(33.333% - 20px); /* Adjust card width */
-    max-width: 300px; /* Optional max width */
-    height: 150px; /* Set desired height */
-    padding: 10px; /* Adjust padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional box shadow */
-    margin: 10px; /* Margin around cards */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.service-item h3 {
-    font-size: 25px; /* Adjust font size */
-    margin: 0; /* Remove margin */
-}
-
-.services-image {
-    margin-top: 20px;
-}
-
-.services-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-        .testimonials-container {
-
-            font-size: 25px;
-        }
-
-
-    </style>
 </head>
 <body>
     <header>
@@ -81,17 +32,34 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-text">
-                <h1>Welcome to TR Consulting LLC</h1>
-                <p>We bring a fresh set of eyes to every challenge, leveraging innovative solutions and cutting-edge technologies to drive business success.</p>
-                <a href="contact.html" class="hero-button">Get in Touch</a>
-            </div>
-            <div class="hero-overlay">
-                <img src="pexels-goumbik-574071.jpg" alt="Hero Image">
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h1>Welcome to TR Consulting LLC</h1>
+        </section>
+
+        <!-- Promotional Image and Text Section -->
+        <section id="promo-image">
+            <div class="promo-content">
+                <img src="pexels-hillaryfox-1595385.jpg" alt="Promotional Image" class="promo-image">
+                <div class="promo-text">
+                    <div class="promo-box">
+                        <p>Are you a small or medium-sized business without an IT department? Let us manage your tech needs with a free consultation and flexible pricing.</p>
+                    </div>
+                    <div class="promo-box">
+                        <p>Need intern-level work but can’t hire an intern? Contact us for a free consultation.</p>
+                    </div>
+                    <div class="promo-box">
+                        <p>Tired of subscriptions? TR Consulting delivers customized software solutions without recurring costs.</p>
+                    </div>
+                    <a href="contact.html" class="cta-button">Contact Us for a Free Consultation</a>
+                </div>
             </div>
         </section>
 
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
             <div class="services-container">
@@ -111,12 +79,10 @@
                     <h3>Web Development</h3>
                 </div>
             </div>
-            <div class="services-image">
-                <img src="pexels-olly-3760067.jpg" alt="Services Image">
-            </div>
+            <a href="services.html" class="learn-more">Learn More</a>
         </section>
-        
-        
+    </main>
+
         <section id="testimonials">
             <h2>Client Testimonials</h2>
             <div class="testimonials-container">
@@ -136,24 +102,18 @@
             <div class="quotes-container">
                 <div class="quote">
                     <p>"The difficulty lies not so much in developing new ideas as in escaping from old ones."</p>
-                    <p></br></p>
                     <p>- John Maynard Keynes</p>
                 </div>
                 <div class="quote">
                     <p>"The most important single central fact about a free market is that no exchange takes place unless both parties benefit."</p>
-                    <p></br></p>
                     <p>- Milton Friedman</p>
                 </div>
                 <div class="quote">
                     <p>"Price is what you pay. Value is what you get."</p>
-                    <p></br></p>
                     <p>- Warren Buffett</p>
                 </div>
             </div>
         </section>
-        
-        
-        
 
         <section id="blog">
             <h2>Latest Blog Posts/Notable Works</h2>
@@ -181,5 +141,18 @@
         <p>PO Box 180803, Fort Smith, AR 72918 | (479) 420-3292</p>
         <p>Email: <a href="mailto:tarconsultinggroupllc@gmail.com">tarconsultinggroupllc@gmail.com</a></p>
     </footer>
+
+    <!-- Floating Banner -->
+    <div id="floating-banner">
+        <p>If you're a small-medium sized business and don't have an IT department, let us take care of it with a free consultation and dynamic pricing.</p>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+
+    <script>
+        // JavaScript to handle the floating banner close functionality
+        document.getElementById('floating-banner').addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
